@@ -1,6 +1,6 @@
 <configs>
 
-	<!-- Vanilla Expansion Spider Pack Sleeper Volume Group -->
+	<!-- Colony Expansion Spider Pack Sleeper Volume Group -->
 	<append xpath="/entitygroups">
 		<entitygroup name="SpiderPack_b">
             <entity name="animalSpider01"/>
