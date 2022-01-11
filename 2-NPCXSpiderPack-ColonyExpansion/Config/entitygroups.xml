@@ -1,0 +1,68 @@
+<configs>
+
+	<!-- Vanilla Expansion Spider Pack Sleeper Volume Group -->
+	<append xpath="/entitygroups">
+		<entitygroup name="SpiderPack_b">
+            <entity name="animalSpider01"/>
+            <entity name="animalSpider02"/>
+			<entity name="animalSpider03"/>
+		</entitygroup>
+		<entitygroup name="SpiderPack_Feral">
+            <entity name="animalSpider01Feral"/>
+            <entity name="animalSpider02Feral"/>
+			<entity name="animalSpider03Feral"/>
+		</entitygroup>
+		<entitygroup name="SpiderPack_Radiated">
+            <entity name="animalSpider01Radiated"/>
+            <entity name="animalSpider02Radiated"/>
+			<entity name="animalSpider03Radiated"/>
+		</entitygroup>
+		<entitygroup name="SpiderPack_Mini">
+            <entity name="animalSpider01Mini"/>
+            <entity name="animalSpider02Mini"/>
+			<entity name="animalSpider03Mini"/>
+		</entitygroup>
+		<entitygroup name="SpiderPack_Queen">
+            <entity name="animalSpider01Queen"/>
+            <entity name="animalSpider02Queen"/>
+			<entity name="animalSpider03Queen"/>
+		</entitygroup>		
+	</append>
+	
+	<!-- Colony Expansion Additions to XNPCCore Groups -->	
+	<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']">
+		<entity name="animalSpider01" prob="0.3"/>
+		<entity name="animalSpider02" prob="0.3"/>
+		<entity name="animalSpider03" prob="0.3"/>	
+		<entity name="animalSpider01Feral" prob="0.1"/>
+		<entity name="animalSpider02Feral" prob="0.1"/>
+		<entity name="animalSpider03Feral" prob="0.1"/>
+		<entity name="animalSpider01Radiated" prob="0.05"/>
+		<entity name="animalSpider02Radiated" prob="0.05"/>
+		<entity name="animalSpider03Radiated" prob="0.05"/>
+        <entity name="animalSpider01Mini" prob="0.5"/>
+        <entity name="animalSpider02Mini" prob="0.5"/>
+		<entity name="animalSpider03Mini" prob="0.5"/>
+        <entity name="animalSpider01Queen" prob="0.025"/>
+        <entity name="animalSpider02Queen" prob="0.025"/>
+		<entity name="animalSpider03Queen" prob="0.025"/>		
+	</append>
+	
+	<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesert']">
+		<entity name="animalSpider01" prob="0.15"/>
+		<entity name="animalSpider02" prob="0.15"/>
+		<entity name="animalSpider03" prob="0.15"/>	
+		<entity name="animalSpider01Feral" prob="0.05"/>
+		<entity name="animalSpider02Feral" prob="0.05"/>
+		<entity name="animalSpider03Feral" prob="0.05"/>
+		<entity name="animalSpider01Radiated" prob="0.025"/>
+		<entity name="animalSpider02Radiated" prob="0.025"/>
+		<entity name="animalSpider03Radiated" prob="0.025"/>
+        <entity name="animalSpider01Mini" prob="0.25"/>
+        <entity name="animalSpider02Mini" prob="0.25"/>
+		<entity name="animalSpider03Mini" prob="0.25"/>
+        <entity name="animalSpider01Queen" prob="0.0125"/>
+        <entity name="animalSpider02Queen" prob="0.0125"/>
+		<entity name="animalSpider03Queen" prob="0.0125"/>		
+	</append>
+</configs>

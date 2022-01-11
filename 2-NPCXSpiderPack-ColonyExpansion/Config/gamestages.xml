@@ -1,0 +1,54 @@
+<configs>
+
+	<append xpath="/gamestages">	
+		<spawner name="SleeperSpiderPack_b">
+			<gamestage stage="1">
+				<spawn group="SpiderPack_b" num="1" maxAlive="1" duration="1"/>
+			</gamestage>			
+		</spawner>
+		<group name="SpiderPack_b" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+			<spawner name="SleeperSpiderPack_b" count="5"/>
+		</group>		
+	</append>
+	<append xpath="/gamestages">	
+		<spawner name="SleeperSpiderPack_Feral">
+			<gamestage stage="1">
+				<spawn group="SpiderPack_Feral" num="1" maxAlive="1" duration="1"/>
+			</gamestage>			
+		</spawner>
+		<group name="SpiderPack_Feral" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+			<spawner name="SleeperSpiderPack_Feral" count="5"/>
+		</group>		
+	</append>
+	<append xpath="/gamestages">	
+		<spawner name="SleeperSpiderPack_Radiated">
+			<gamestage stage="1">
+				<spawn group="SpiderPack_Radiated" num="1" maxAlive="1" duration="1"/>
+			</gamestage>			
+		</spawner>
+		<group name="SpiderPack_Radiated" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+			<spawner name="SleeperSpiderPack_Radiated" count="5"/>
+		</group>		
+	</append>
+	<append xpath="/gamestages">	
+		<spawner name="SleeperSpiderPack_Mini">
+			<gamestage stage="1">
+				<spawn group="SpiderPack_Mini" num="1" maxAlive="1" duration="1"/>
+			</gamestage>			
+		</spawner>
+		<group name="SpiderPack_Mini" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+			<spawner name="SleeperSpiderPack_Mini" count="5"/>
+		</group>		
+	</append>
+	<append xpath="/gamestages">	
+		<spawner name="SleeperSpiderPack_Queen">
+			<gamestage stage="1">
+				<spawn group="SpiderPack_Queen" num="1" maxAlive="1" duration="1"/>
+			</gamestage>			
+		</spawner>
+		<group name="SpiderPack_Queen" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+			<spawner name="SleeperSpiderPack_Queen" count="5"/>
+		</group>		
+	</append>	
+
+</configs>
