@@ -1,0 +1,44 @@
+<configs>
+	
+	<append xpath="/buffs">
+	
+	<!-- Decorations -->
+
+		<buff name="UMAShockDeco" hidden="true">
+			<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Melee/TaserBaton/TaserBatonPrefab.prefab" local_offset="-.1,-.05,-.05" local_rotation="0,0,0" parent_transform="RightHand"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_electric_shock_small" local_offset="-.1,-.05,-.05" local_rotation="0,0,0" parent_transform="RightHand"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Melee/TaserBaton/TaserBatonPrefab.prefab" local_offset="-.1,0,0" local_rotation="180,0,0" parent_transform="LeftHand"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_electric_shock_small" local_offset="-.1,0,0" local_rotation="180,0,0" parent_transform="LeftHand"/>
+			</effect_group>
+		</buff>
+
+		<buff name="UMASlasherDeco" hidden="true">
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Melee/Knives/machetePrefab.prefab" local_offset="-.11,0,0" local_rotation="180,0,90" parent_transform="RightHand"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#Other/Items?Weapons/Melee/Knives/machetePrefab.prefab" local_offset="-.11,0.03,0" local_rotation="180,0,90" parent_transform="RightHand"/>			
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#Other/Items?Weapons/Melee/Knives/machetePrefab.prefab" local_offset="-.35,-0.01,-0" local_rotation="270,0,90" parent_transform="RightForeArm"/>				
+			</effect_group>
+		</buff>
+		
+	<!-- Attacks -->		
+
+		<buff name="UMAParasiteAttack" icon="ui_game_symbol_skull" icon_color="255,0,0" icon_blink="true"> <!-- Snufkin for original and arramus for revision -->
+			<stack_type value="replace"/>
+			<display_value value="$parasite"/>
+			<effect_group>
+				<!--passive_effect name="HealthMaxModifierOT" operation="base_subtract" value="1"/-->
+                <passive_effect name="HealthMax" operation="base_subtract" value="15"/>	<!--Removes 15 from base health for 5 seconds as per new setting below-->		
+				<!--triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$parasite" operation="set" value="10"/-->
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$parasite" operation="set" value="5"/>				
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$parasite" operation="add" value="-1"/>
+				<triggered_effect trigger="onSelfBuffStack" action="ModifyCVar" cvar="$parasite" operation="add" value="10"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$parasite" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="UMAParasiteAttack">
+					<requirement name="CVarCompare" cvar="$parasite" operation="LTE" value="0"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>		
+		
+	</append>
+</configs>

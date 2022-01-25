@@ -1,0 +1,9 @@
+<configs>
+
+	<insertBefore xpath="/entitygroups/entitygroup[starts-with(@name, 'WildGame')]/entity[@name='none']">
+        <entity name="npcUMAGuardOakraven" prob="0.1" />
+        <entity name="npcUMAGuardBlueSlasher" prob="0.1" />
+        <entity name="zombieUMARedSlasher" prob="0.1" />		
+    </insertBefore>          
+ 
+</configs>

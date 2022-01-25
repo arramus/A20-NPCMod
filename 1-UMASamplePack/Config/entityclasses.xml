@@ -1,0 +1,103 @@
+<configs>
+
+<!--  A small sample pack from Oak's Guards and Pets Mod / Snufkin Zombie PLUS Mod with attachments, buffs, and archetypes  -->
+
+<!-- FRIENDLY AND HIREABLE UMA GUARDS -->
+
+	<append xpath="/entity_classes">
+				
+		<entity_class name="npcUMAGuardMaster" extends="npcMeleeAdvancedTemplate">
+			<property name="HideInSpawnMenu" value="true"/>
+			<property name="Tags" value="UMA2,entity,male,npc,melee"/>
+			<property name="Names" value="Master Guard" />			
+			<property name="EntityType" value="Player"/>			
+			<property name="Faction" value="whiteriver"/>
+			<property name="ModelType" value="ZombieUMA"/>
+			<property name="PhysicsBody" value="ZombieUMA" />
+			<property name="Prefab" value="NPC" />			
+			<property name="HasDeathAnim" value="false" />
+			<property name="RootMotion" value="true" />
+			<property name="HasRagdoll" value="true" />
+			<property name="HandItem" value="meleeHandZombieFeral2"/>			
+            <effect_group name="Base Effects">
+		        <passive_effect name="HealthMax" operation="base_set" value="300"/>
+		        <passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
+	        </effect_group>
+		</entity_class>				
+
+        <entity_class name="npcUMAGuardOakraven" extends="npcUMAGuardMaster"> 
+			<property name="Tags" value="UMA2,entity,male,npc,melee"/>			 
+			<property name="Names" value="Oakraven Guard" />	
+			<property name="Archetype" value="npcUMAGuardOakraven" />
+			<property name="HandItem" value="meleeHandUMAShock"/>			
+             <effect_group name="Base Effects">
+		        <passive_effect name="HealthMax" operation="base_set" value="300"/>				
+		        <passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="3"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>				
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="UMAShockDeco"/>				
+	        </effect_group>
+		</entity_class>
+		
+        <entity_class name="npcUMAGuardBlueSlasher" extends="npcUMAGuardMaster"> 
+			<property name="Tags" value="UMA2,entity,male,npc,melee"/>			 
+			<property name="Names" value="Blue Slasher Guard" />	
+			<property name="Archetype" value="npcUMAGuardBlueSlasher" />			
+            <effect_group name="Base Effects">
+		        <passive_effect name="HealthMax" operation="base_set" value="300"/>				
+		        <passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="3"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>				
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="UMASlasherDeco"/>				
+	        </effect_group>
+		</entity_class>		
+
+<!-- HOSTILE UMA ZOMBIE -->
+
+		<entity_class name="Zombie_NPCModTemplate" extends="zombieTemplateMale">
+			<property name="EntityType" value="Zombie" />
+			<property name="Mesh" value=""/>
+			<property name="Prefab" value="Z"/>
+			<property name="Class" value="EntityZombie" />
+			<property name="Parent" value="Enemies" />
+			<property name="IsEnemyEntity" value="true" />
+			<property name="HandItem" value="meleeHandZombie01" />
+			<property name="SoundAlert" value="Enemies/Base_Zombie_Male/zombiemalealert" />
+			<property name="SoundSense" value="Enemies/Base_Zombie_Male/zombiemalesense" />
+			<property name="SoundHurt" value="Enemies/Base_Zombie_Male/zombiemalepain" />
+			<property name="SoundDeath" value="Enemies/Base_Zombie_Male/zombiemaledeath" />
+			<property name="SoundAttack" value="Enemies/Base_Zombie_Male/zombiemaleattack" />
+			<property name="DismemberMultiplierHead" value=".4"/>
+			<property name="DismemberMultiplierArms" value=".4"/>
+			<property name="DismemberMultiplierLegs" value=".4"/>
+			<property name="PainResistPerHit" value=".5"/>
+			<property name="AttackTimeoutDay" value="1.5" />
+			<property name="AttackTimeoutNight" value="1.1" />
+			<property name="WalkType" value="7" />
+			<property name="ModelType" value="ZombieUMA" />
+			<property name="RootMotion" value="true" />
+			<property name="HasRagdoll" value="true" />
+			<property name="PhysicsBody" value="zombieUMA" />
+			<property name="HasDeathAnim" value="false" />
+		</entity_class>
+
+		<entity_class name="zombieUMARedSlasher" extends="Zombie_NPCModTemplate">
+			<property name="Archetype" value="zombieUMARedSlasher" />
+			<property name="Tags" value="entity,zombie,walker,umazombie" />
+			<property name="ExperienceGain" value="1200"/>
+			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+			<property name="LootDropProb" value="0.03"/>
+			<property name="WalkType" value="2"/>			
+			<property name="HandItem" value="meleeHandUMAParasite"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="532"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="UMASlasherDeco"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="5"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			</effect_group>
+		</entity_class>			
+
+		</append>	
+	
+</configs>

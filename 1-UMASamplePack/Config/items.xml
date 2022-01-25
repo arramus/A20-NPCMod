@@ -1,0 +1,49 @@
+<configs>
+	<append xpath="/items">
+	
+		<item name="meleeHandUMAShock">
+			<property name="Extends" value="meleeHandMaster"/>
+			<property name="Tags" value="blunt,melee,light"/>	
+			<property name="CreativeMode" value="None"/>
+			<property name="HoldType" value="9"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Canhold" value="false"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Candrop" value="false"/>
+			<property class="Action0">
+				<property name="Class" value="Melee"/>
+				<property name="Delay" value="1"/>
+				<property name="Range" value="1.88"/> 
+				<property name="Sphere" value="0.4"/>
+				<property name="Block_range" value="2.3"/>
+				<property name="DamageEntity" value="41"/>
+				<property name="DamageBlock" value="0"/>
+				<property name="Buff" value="buffArmBroken,buffShocked"/>			
+				<property name="Sound_start" value="swoosh"/>
+			</property>
+				<effect_group name="meleeHandUMAShock" tiered="false">	
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="1.65"/>
+				<passive_effect name="BuffProcChance" operation="base_set" value=".12" tags="buffArmBroken"/>
+				<passive_effect name="BuffProcChance" operation="base_set" value=".25" tags="buffShocked"/>		
+			</effect_group>
+		</item>
+		
+		<item name="meleeHandUMAParasite">
+			<property name="Extends" value="meleeHandMaster"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="HoldType" value="9"/>
+			<property class="Action0">
+				<property name="Buff" value="UMAParasiteAttack"/>
+				<!--property name="DamageEntity" value="0"/-->
+				<property name="DamageEntity" value="10"/> <!--Changed from the above 0 to offset loss of buff HealthMaxModifierOT. A value of 10 provides 8 damage-->		
+				<property name="DamageBlock" value="16"/></property>
+			<effect_group name="UMAParasiteAttack" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="BuffProcChance" operation="base_set" value="0.90" tags="UMAParasiteAttack"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="other" cvar="infectionZombieHit" operation="set" value="30"/>
+				<!--InfectionRegular-->
+			</effect_group>
+		</item>
+		
+	</append>
+</configs>
