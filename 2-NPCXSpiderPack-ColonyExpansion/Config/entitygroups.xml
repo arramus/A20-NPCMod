@@ -26,7 +26,35 @@
             <entity name="animalSpider01Queen"/>
             <entity name="animalSpider02Queen"/>
 			<entity name="animalSpider03Queen"/>
-		</entitygroup>		
+		</entitygroup>
+		<entitygroup name="SpiderPack_EasyMix">
+            <entity name="animalSpider01"/>
+            <entity name="animalSpider02"/>
+			<entity name="animalSpider03"/>
+            <entity name="animalSpider01Mini"/>
+            <entity name="animalSpider02Mini"/>
+			<entity name="animalSpider03Mini"/>			
+		</entitygroup>
+		<entitygroup name="SpiderPack_Mix">
+            <entity name="animalSpider01"/>
+            <entity name="animalSpider02"/>
+			<entity name="animalSpider03"/>
+            <entity name="animalSpider01Feral"/>
+            <entity name="animalSpider02Feral"/>
+			<entity name="animalSpider03Feral"/>			
+            <entity name="animalSpider01Mini"/>
+            <entity name="animalSpider02Mini"/>
+			<entity name="animalSpider03Mini"/>			
+		</entitygroup>
+		<entitygroup name="SpiderPack_HardMix">
+            <entity name="animalSpider01Feral"/>
+            <entity name="animalSpider02Feral"/>
+			<entity name="animalSpider03Feral"/>		
+            <entity name="animalSpider01Radiated"/>
+            <entity name="animalSpider02Radiated"/>
+			<entity name="animalSpider03Radiated"/>			
+		</entitygroup>	
+		
 	</append>
 	
 	<!-- Colony Expansion Additions to XNPCCore Groups -->	

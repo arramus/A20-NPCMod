@@ -12,13 +12,13 @@
   <property name="RotationToFaceNorth" value="2" />
   <property name="Zoning" value="none" />
   <property name="Tags" value="wilderness" />
-  <property name="SleeperVolumeSize" value="25, 7, 25" />
-  <property name="SleeperVolumeStart" value="-2, 1, -2" />
+  <property name="SleeperVolumeSize" value="33, 7, 33" />
+  <property name="SleeperVolumeStart" value="-6, 1, -6" />
   <property name="SleeperVolumeGroupId" value="0" />
-  <property name="SleeperVolumeGroup" value="SpiderPack_b,8,8" />
+  <property name="SleeperVolumeGroup" value="SpiderPack_Mini,16,16" />
   <property name="SleeperIsLootVolume" value="False" />
   <property name="SleeperIsQuestExclude" value="False" />
-  <property name="SleeperVolumeFlags" value="0" />
+  <property name="SleeperVolumeFlags" value="2" />
   <property name="YOffset" value="-1" />
   <property class="Stats">
     <property name="TotalVertices" value="82256" />
