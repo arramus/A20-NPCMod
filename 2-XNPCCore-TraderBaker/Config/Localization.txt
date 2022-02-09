@@ -1,0 +1,9 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+
+npcTraderBaker,entityclasses,Entity,,,Trader Baker,,,,,,,,,,,,,
+noteCollectHoneyErrand,items,item,,,Collect Honey Errand,,,,,,,,,,,,,
+noteCollectHoneyErrandDesc,items,item,,,"The Baker is a little short of honey. Accept this errand to collect and return 3 jars of honey for a random farm reward.",,,,,,,,,,,,,
+noteCollectEggsErrand,items,item,,,Collect Eggs Errand,,,,,,,,,,,,,
+noteCollectEggsErrandDesc,items,item,,,"The Baker is a little short of eggs. Accept this errand to collect and return a Baker's Dozen for a random farm reward.",,,,,,,,,,,,,
+foodBakersRoastChicken,items,Food,,,Baker's Roast Chicken,,,,,,,,,,,,,
+foodBakersRoastChickenDesc,items,Food,,,"The Baker's finest Roast Chicken with its secret blend of herbs and spices.",,,,,,,,,,,,,

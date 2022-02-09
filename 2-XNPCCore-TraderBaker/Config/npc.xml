@@ -1,0 +1,16 @@
+<configs>
+  <append xpath="npc">
+
+    <npc_info
+      id="traderbaker"
+      name="Trader Baker"
+      name_key="npc_traderBaker"
+      faction="whiteriver"
+      portrait="npc_baker"
+      greeting_type="nearby"
+      stance="Like" voice_set="trader"
+      trader_id="51" dialog_id="trader" quest_faction="1" 
+      />
+      
+  </append>
+</configs>

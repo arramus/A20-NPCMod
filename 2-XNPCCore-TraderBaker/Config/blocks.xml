@@ -1,0 +1,7 @@
+<configs>
+
+	<!-- Uncomment below to use in the Editor. Shift + Alt + RMB on Trader Spawn Block to choose trader type. -->
+
+	<!--set xpath="/blocks/block[@name='spawnTrader']/property[@name='SpawnClass'][@value='npcTraderJoel,npcTraderRekt,npcTraderHugh,npcTraderBob,npcTraderJen']/@value">npcTraderJoel,npcTraderRekt,npcTraderHugh,npcTraderBob,npcTraderJen,npcTraderBaker</set-->
+
+</configs>

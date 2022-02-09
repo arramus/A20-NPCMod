@@ -1,0 +1,15 @@
+<configs>
+
+	<insertBefore xpath="/lootcontainers/lootgroup[@name='groupQuestFarmPlotsT1']">	
+	<lootgroup name="groupQuestBakerFarmPlotsT1" count="all">
+		<item name="questRewardFarmT1Bundle"/>
+	</lootgroup>
+	<lootgroup name="groupQuestBakerFarmPlotsT2" count="all"><!-- Reported Vanilla Bug T2 gives T2 reward -->
+		<item name="questRewardFarmT2Bundle"/>
+	</lootgroup>
+	<lootgroup name="groupQuestBakerFarmPlotsT3" count="all">
+		<item name="questRewardFarmT3Bundle"/>
+	</lootgroup>	
+	</insertBefore>
+	
+</configs>
