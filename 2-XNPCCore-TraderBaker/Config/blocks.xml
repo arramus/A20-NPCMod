@@ -1,5 +1,23 @@
 <configs>
 
-	<set xpath="/blocks/block[@name='spawnTrader']/property[@name='SpawnClass'][@value='npcTraderJoel,npcTraderRekt,npcTraderHugh,npcTraderBob,npcTraderJen']/@value">npcTraderJoel,npcTraderRekt,npcTraderHugh,npcTraderBob,npcTraderJen,npcTraderBaker</set>
+	<append xpath="/blocks">
+
+	<block name="spawnTraderBaker">
+		<property name="Extends" value="metalTrussingRampOld" param1="DescriptionKey"/>
+		<property name="CustomIcon" value="metalTrussingRampOld"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Class" value="SpawnEntity"/>
+		<property name="StabilitySupport" value="false"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Mesh" value="models"/>
+		<property name="Model" value="Entities/Electrical/battery_bankPrefab"/>
+		<property name="HandleFace" value="Bottom"/>		
+		<property name="SpawnClass" value="npcTraderBaker"/>
+		<property name="FilterTags" value="MC_helpers,SC_questblocks"/>
+		<property name="Collide" value="sight"/>
+		<property name="IndexName" value="Trader"/>
+	</block>
+	
+	</append>
 
 </configs>
