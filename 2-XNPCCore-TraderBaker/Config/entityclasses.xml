@@ -9,7 +9,7 @@
 			<property name="NavObject" value="trader" />
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="DanceType" value="1" />
-			<property name="Mesh" value="#@modfolder(0-XNPCCoreEXP):Resources/XythNPCs.unity3d?Baker_X"/>			
+			<property name="Mesh" value="#@modfolder(0-XNPCCore):Resources/XythNPCs.unity3d?Baker_X"/>			
 			<property name="AvatarController" value="AvatarZombie01Controller"/>
 			<property name="PhysicsBody"  value="mixamoConvertedStandardVM"/>
 			<property name="WalkType" value="7"/>
