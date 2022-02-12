@@ -1,6 +1,6 @@
 <configs>
 
-	<!-- Colony Expansion Spider Pack Sleeper Volume Group -->
+	<!-- Colony Expansion Spider Pack Custom Sleeper Volume Group -->
 	<append xpath="/entitygroups">
 		<entitygroup name="SpiderPack_b">
             <entity name="animalSpider01"/>
@@ -54,7 +54,54 @@
             <entity name="animalSpider02Radiated"/>
 			<entity name="animalSpider03Radiated"/>			
 		</entitygroup>	
-		
+
+		<entitygroup name="npcArachnidsAllGroupGS01">
+			<entity name="animalSpider01" prob="0.3"/>
+			<entity name="animalSpider02" prob="0.3"/>
+			<entity name="animalSpider03" prob="0.3"/>	
+			<entity name="animalSpider01Feral" prob="0.1"/>
+			<entity name="animalSpider02Feral" prob="0.1"/>
+			<entity name="animalSpider03Feral" prob="0.1"/>
+			<entity name="animalSpider01Radiated" prob="0.05"/>
+			<entity name="animalSpider02Radiated" prob="0.05"/>
+			<entity name="animalSpider03Radiated" prob="0.05"/>
+			<entity name="animalSpider01Mini" prob="0.5"/>
+			<entity name="animalSpider02Mini" prob="0.5"/>
+			<entity name="animalSpider03Mini" prob="0.5"/>
+		</entitygroup>
+		<entitygroup name="npcArachnidsAllGroupGS50">
+			<entity name="animalSpider01" prob="0.3"/>
+			<entity name="animalSpider02" prob="0.3"/>
+			<entity name="animalSpider03" prob="0.3"/>	
+			<entity name="animalSpider01Feral" prob="0.2"/>
+			<entity name="animalSpider02Feral" prob="0.2"/>
+			<entity name="animalSpider03Feral" prob="0.2"/>
+			<entity name="animalSpider01Radiated" prob="0.1"/>
+			<entity name="animalSpider02Radiated" prob="0.1"/>
+			<entity name="animalSpider03Radiated" prob="0.1"/>
+			<entity name="animalSpider01Mini" prob="0.5"/>
+			<entity name="animalSpider02Mini" prob="0.5"/>
+			<entity name="animalSpider03Mini" prob="0.5"/>
+		</entitygroup>		
+		<entitygroup name="npcArachnidsAllGroupGS100">
+			<entity name="animalSpider01" prob="0.3"/>
+			<entity name="animalSpider02" prob="0.3"/>
+			<entity name="animalSpider03" prob="0.3"/>	
+			<entity name="animalSpider01Feral" prob="0.3"/>
+			<entity name="animalSpider02Feral" prob="0.3"/>
+			<entity name="animalSpider03Feral" prob="0.3"/>
+			<entity name="animalSpider01Radiated" prob="0.15"/>
+			<entity name="animalSpider02Radiated" prob="0.15"/>
+			<entity name="animalSpider03Radiated" prob="0.15"/>
+			<entity name="animalSpider01Mini" prob="0.5"/>
+			<entity name="animalSpider02Mini" prob="0.5"/>
+			<entity name="animalSpider03Mini" prob="0.5"/>
+		</entitygroup>		
+		<entitygroup name="npcArachnidsBossGroupGS01">
+			<entity name="animalSpider01Queen" prob="0.25"/>
+			<entity name="animalSpider02Queen" prob="0.25"/>
+			<entity name="animalSpider03Queen" prob="0.25"/>
+		</entitygroup>		
 	</append>
 	
 	<!-- Colony Expansion Additions to XNPCCore Groups -->	
