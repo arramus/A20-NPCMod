@@ -56,7 +56,7 @@
 		</entitygroup>	
 	</append>
 	
-	<!-- Colony Expansion Additions to XNPCCore Groups -->	
+	<!-- Colony Expansion Additions to XNPCCore BIOME Groups -->	
 	<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']">
 		<entity name="animalSpider01" prob="0.3"/>
 		<entity name="animalSpider02" prob="0.3"/>
@@ -92,4 +92,122 @@
         <entity name="animalSpider02Queen" prob="0.0125"/>
 		<entity name="animalSpider03Queen" prob="0.0125"/>		
 	</append>
+	
+	<!-- Colony Expansion Additions to XNPCCore Sleeper Volume Groups -->
+	<append xpath="/entitygroups/entitygroup[@name='npcArachnidsAllGroupGS01']">
+		<entity name="animalSpider01"/>
+		<entity name="animalSpider02"/>
+		<entity name="animalSpider03"/>	
+		<entity name="animalSpider01Feral" prob="0.1"/>
+		<entity name="animalSpider02Feral" prob="0.1"/>
+		<entity name="animalSpider03Feral" prob="0.1"/>
+		<entity name="animalSpider01Radiated" prob="0.05"/>
+		<entity name="animalSpider02Radiated" prob="0.05"/>
+		<entity name="animalSpider03Radiated" prob="0.05"/>
+        <entity name="animalSpider01Mini"/>
+        <entity name="animalSpider02Mini"/>
+		<entity name="animalSpider03Mini"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcArachnidsAllGroupGS50']">
+		<entity name="animalSpider01"/>
+		<entity name="animalSpider02"/>
+		<entity name="animalSpider03"/>	
+		<entity name="animalSpider01Feral" prob="0.2"/>
+		<entity name="animalSpider02Feral" prob="0.2"/>
+		<entity name="animalSpider03Feral" prob="0.2"/>
+		<entity name="animalSpider01Radiated" prob="0.1"/>
+		<entity name="animalSpider02Radiated" prob="0.1"/>
+		<entity name="animalSpider03Radiated" prob="0.1"/>
+        <entity name="animalSpider01Mini"/>
+        <entity name="animalSpider02Mini"/>
+		<entity name="animalSpider03Mini"/>
+	</append>	
+	<append xpath="/entitygroups/entitygroup[@name='npcArachnidsAllGroupGS100']">
+		<entity name="animalSpider01"/>
+		<entity name="animalSpider02"/>
+		<entity name="animalSpider03"/>	
+		<entity name="animalSpider01Feral" prob="0.25"/>
+		<entity name="animalSpider02Feral" prob="0.25"/>
+		<entity name="animalSpider03Feral" prob="0.25"/>
+		<entity name="animalSpider01Radiated" prob="0.15"/>
+		<entity name="animalSpider02Radiated" prob="0.15"/>
+		<entity name="animalSpider03Radiated" prob="0.15"/>
+        <entity name="animalSpider01Mini"/>
+        <entity name="animalSpider02Mini"/>
+		<entity name="animalSpider03Mini"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcArachnidsAllGroupGS200']">
+		<entity name="animalSpider01"/>
+		<entity name="animalSpider02"/>
+		<entity name="animalSpider03"/>	
+		<entity name="animalSpider01Feral" prob="0.35"/>
+		<entity name="animalSpider02Feral" prob="0.35"/>
+		<entity name="animalSpider03Feral" prob="0.35"/>
+		<entity name="animalSpider01Radiated" prob="0.25"/>
+		<entity name="animalSpider02Radiated" prob="0.25"/>
+		<entity name="animalSpider03Radiated" prob="0.25"/>
+        <entity name="animalSpider01Mini"/>
+        <entity name="animalSpider02Mini"/>
+		<entity name="animalSpider03Mini"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcArachnidsAllGroupGS400']">
+		<entity name="animalSpider01"/>
+		<entity name="animalSpider02"/>
+		<entity name="animalSpider03"/>	
+		<entity name="animalSpider01Feral" prob="0.5"/>
+		<entity name="animalSpider02Feral" prob="0.5"/>
+		<entity name="animalSpider03Feral" prob="0.5"/>
+		<entity name="animalSpider01Radiated" prob="0.4"/>
+		<entity name="animalSpider02Radiated" prob="0.4"/>
+		<entity name="animalSpider03Radiated" prob="0.4"/>
+        <entity name="animalSpider01Mini"/>
+        <entity name="animalSpider02Mini"/>
+		<entity name="animalSpider03Mini"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcArachnidsAllGroupGS800']">
+		<entity name="animalSpider01"/>
+		<entity name="animalSpider02"/>
+		<entity name="animalSpider03"/>	
+		<entity name="animalSpider01Feral" prob="0.6"/>
+		<entity name="animalSpider02Feral" prob="0.6"/>
+		<entity name="animalSpider03Feral" prob="0.6"/>
+		<entity name="animalSpider01Radiated" prob="0.5"/>
+		<entity name="animalSpider02Radiated" prob="0.5"/>
+		<entity name="animalSpider03Radiated" prob="0.5"/>
+        <entity name="animalSpider01Mini"/>
+        <entity name="animalSpider02Mini"/>
+		<entity name="animalSpider03Mini"/>
+	</append>
+
+	<append xpath="/entitygroups/entitygroup[@name='npcArachnidsBossGroupGS01']">
+        <entity name="animalSpider01Queen"/>
+        <entity name="animalSpider02Queen"/>
+		<entity name="animalSpider03Queen"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcArachnidsBossGroupGS50']">
+        <entity name="animalSpider01Queen"/>
+        <entity name="animalSpider02Queen"/>
+		<entity name="animalSpider03Queen"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcArachnidsBossGroupGS100']">
+        <entity name="animalSpider01Queen"/>
+        <entity name="animalSpider02Queen"/>
+		<entity name="animalSpider03Queen"/>
+	</append>	
+	<append xpath="/entitygroups/entitygroup[@name='npcArachnidsBossGroupGS200']">
+        <entity name="animalSpider01Queen"/>
+        <entity name="animalSpider02Queen"/>
+		<entity name="animalSpider03Queen"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcArachnidsBossGroupGS400']">
+        <entity name="animalSpider01Queen"/>
+        <entity name="animalSpider02Queen"/>
+		<entity name="animalSpider03Queen"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcArachnidsBossGroupGS800']">
+        <entity name="animalSpider01Queen"/>
+        <entity name="animalSpider02Queen"/>
+		<entity name="animalSpider03Queen"/>
+	</append>	
+	
 </configs>
