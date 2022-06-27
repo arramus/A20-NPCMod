@@ -1,0 +1,17 @@
+<configs>
+
+	<append xpath="/items">
+	
+		<item name="noteqc_2-SummonWolfFriend">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="noteqc_2-SummonWolfFriendDesc"/>
+			<property name="CustomIcon" value="wolfspawn"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="challenge_2-SummonWolfFriend"/>
+			</property>
+		</item>
+		
+	</append>
+	
+</configs>
