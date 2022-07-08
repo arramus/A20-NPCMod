@@ -1,0 +1,15 @@
+<configs>
+
+	
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='rareBooks']">
+		<item name="vehicleSpiderRider-2-NPCXSpiderPackChassisSchematic"/>
+		<item name="vehicleSpiderRider-2-NPCXSpiderPackHandlebarsSchematic"/>		
+	</append>
+	
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='vehiclePartsT0']">
+		<item name="vehicleSpiderRider-2-NPCXSpiderPackChassis"/>
+		<item name="vehicleSpiderRider-2-NPCXSpiderPackHandlebars"/>
+		<item name="vehicleSpiderRider-2-NPCXSpiderPackPlaceable"/>	
+	</append>
+
+</configs>

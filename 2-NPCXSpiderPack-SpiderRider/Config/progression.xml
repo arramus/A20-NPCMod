@@ -1,0 +1,10 @@
+<configs>
+
+	<append xpath="/progression/perks/perk[@name='perkGreaseMonkey']">
+		<effect_group>		
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1"
+				tags="vehicleSpiderRider-2-NPCXSpiderPackChassis,vehicleSpiderRider-2-NPCXSpiderPackHandlebars"/>	
+		</effect_group>		
+	</append>
+		
+</configs>

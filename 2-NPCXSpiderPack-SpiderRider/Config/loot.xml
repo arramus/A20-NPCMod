@@ -1,0 +1,22 @@
+<configs>
+
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsVehiclesT1']">
+		<item name="vehicleSpiderRider-2-NPCXSpiderPackChassisSchematic"/>
+		<item name="vehicleSpiderRider-2-NPCXSpiderPackHandlebarsSchematic"/>		
+	</append>
+	
+	<insertBefore xpath="/lootcontainers/lootgroup[@name='vehiclePartsTiered']">
+	<lootgroup name="SpiderRider-2-NPCXSpiderPackParts">
+		<item name="vehicleSpiderRider-2-NPCXSpiderPackChassis"/>
+		<item name="vehicleSpiderRider-2-NPCXSpiderPackHandlebars"/>
+		<item name="vehicleWheels"/>
+		<item name="smallEngine"/>
+		<item name="carBattery"/>
+	</lootgroup>
+	</insertBefore>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='vehiclePartsTiered']">
+		<item group="SpiderRider-2-NPCXSpiderPackParts" loot_prob_template="ProbT2Cap"/>		
+	</append>	
+	
+</configs>

@@ -1,0 +1,10 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+
+perkGreaseMonkeyRank3LongDesc,progression,perk Int,,,"It was only a matter of time before going faster and carrying more gear was a necessity. You can craft motorcycle and npcmod spider rider parts, oil and quality 3 car batteries. Craft motorcycle and npcmod spider rider parts 33% cheaper.",,,,,,,,,,,,,
+
+vehicleSpiderRider-2-NPCXSpiderPackChassis,vehicles,item,,,NPCMod Spider Rider Chassis,,,,,,,,,,,,,,
+vehicleSpiderRider-2-NPCXSpiderPackChassisSchematic,vehicles,item,,,NPCMod Spider Rider Chassis Schematic,,,,,,,,,,,,,
+vehicleSpiderRider-2-NPCXSpiderPackHandlebars,vehicles,item,,,NPCMod Spider Rider Handlebars,,,,,,,,,,,,,
+vehicleSpiderRider-2-NPCXSpiderPackHandlebarsSchematic,vehicles,item,,,NPCMod Spider Rider Handlebars Schematic,,,,,,,,,,,,,
+vehicleSpiderRider-2-NPCXSpiderPack,entityclasses,Entity,,,NPCMod Spider Rider,,,,,,,,,,,,,
+vehicleSpiderRider-2-NPCXSpiderPackPlaceable,vehicles,vehicle,,,NPCMod Spider Rider,,,,,,,,,,,,,
