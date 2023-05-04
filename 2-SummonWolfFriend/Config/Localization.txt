@@ -1,6 +1,6 @@
 Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
 
 noteqc_2-SummonWolfFriend,items,item,,,Summon - Wolf Friend,,,,,,,,,,,,,
-noteqc_2-SummonWolfFriendDesc,items,item,,," This quest allows a player to summon a Wolf Friend and also receive 20 meat to hire the new companion.",,,,,,,,,,,,,
+noteqc_2-SummonWolfFriendDesc,items,item,,,"This quest allows a player to summon a Wolf Friend and also receive 20 meat to hire the new companion.",,,,,,,,,,,,,
 npcAnimalWolf,entity_classes,entity_class,,,Wolf Friend,,,,,,,,,,,,,
 npcAnimalWolfMini,entity_classes,entity_class,,,Hobo Wolf Friend,,,,,,,,,,,,,
