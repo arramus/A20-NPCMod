@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+  <ModInfo>
+    <Name value="1-SummonFriendZ" />
+    <Description value="Summon FriendZ Pack using TFP zombies as helpers that can be found or bought." />
+    <Author value="arramus" />
+    <Version value="A20" />
+    <Website value="" />
+  </ModInfo>
+</xml>
